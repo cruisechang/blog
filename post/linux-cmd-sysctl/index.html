@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh" data-figures="" class="page">
   <head>
-<title>Math Typesetting | Cruise Blog</title>
+<title>Linux sysctl | Cruise Blog</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,20 +18,20 @@
 <meta property="og:locale" content="zh" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="A brief guide to setup KaTeX">
+<meta name="description" content="Linux sysctl">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@cruisechang">
-<meta name="twitter:title" content="Math Typesetting" />
-<meta property="og:url" content="https://blog.cruisechang.com/post/math-typesetting/" />
-<meta property="og:title" content="Math Typesetting" />
-<meta property="og:description" content="A brief guide to setup KaTeX" />
+<meta name="twitter:title" content="Linux sysctl" />
+<meta property="og:url" content="https://blog.cruisechang.com/post/linux-cmd-sysctl/" />
+<meta property="og:title" content="Linux sysctl" />
+<meta property="og:description" content="Linux sysctl" />
 <meta property="og:image" content="https://blog.cruisechang.com/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://blog.cruisechang.com/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://blog.cruisechang.com/icons/favicon-32x32.png">
 <link rel="manifest" href="https://blog.cruisechang.com/icons/site.webmanifest">
 
-<link rel="canonical" href="https://blog.cruisechang.com/post/math-typesetting/">
+<link rel="canonical" href="https://blog.cruisechang.com/post/linux-cmd-sysctl/">
 
     
 
@@ -101,23 +101,26 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Math Typesetting</h1>
+    <h1 class="post_title">Linux sysctl</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <use xlink:href="#calendar"></use>
 </svg></span>
     <span class="post_date">
-      Mar 8, 2019</span>
-    <span class="post_time"> · 1 min read</span>
+      Sep 14, 2021</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://blog.cruisechang.com/tags/linux' title="linux" class="post_tag button button_translucent">linux
+        </a><a href='https://blog.cruisechang.com/tags/linux-command' title="linux-command" class="post_tag button button_translucent">linux-command
+        </a>
+    </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Math%20Typesetting&url=https%3a%2f%2fblog.cruisechang.com%2fpost%2fmath-typesetting%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Linux%20sysctl&url=https%3a%2f%2fblog.cruisechang.com%2fpost%2flinux-cmd-sysctl%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <use xlink:href="#twitter"></use>
 </svg>
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fblog.cruisechang.com%2fpost%2fmath-typesetting%2f&t=Math%20Typesetting" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fblog.cruisechang.com%2fpost%2flinux-cmd-sysctl%2f&t=Linux%20sysctl" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <use xlink:href="#facebook"></use>
 </svg>
@@ -127,7 +130,7 @@
   <use xlink:href="#linkedin"></use>
 </svg>
     </a>
-    <a href="https://blog.cruisechang.com/post/math-typesetting/" title="Copy Link" class="link link_yank">
+    <a href="https://blog.cruisechang.com/post/linux-cmd-sysctl/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <use xlink:href="#copy"></use>
 </svg>
@@ -137,28 +140,38 @@
   </div>
 
     
-    <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
-<p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
-<ul>
-<li>Create a partial under <code>/layouts/partials/math.html</code></li>
-<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
-<li>Include the partial in your templates like so:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
-<span class="ln">2</span><span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
-<span class="ln">3</span><span class="o">{{</span> end <span class="o">}}</span>
-</code></pre></div><ul>
-<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project's configuration</li>
-<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files</li>
-</ul>
-<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">Supported TeX Functions</a></p>
-
-<h3 id="examples">Examples</h3>
-
-<p>Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p>
+    <h2 id="sysctl">sysctl</h2>
+<p>NAME</p>
+<p>sysctl -- get or set kernel state</p>
+<p>SYNOPSIS</p>
+<p>sysctl [-bdehiNnoqx] name[=value] ...
+sysctl [-bdehNnoqx] -a</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>//顯示某個變數
+<span class="ln">2</span>shell&gt;sysctl kernel.ostype
+<span class="ln">3</span>
+<span class="ln">4</span>//列出全部變數
+<span class="ln">5</span>shell&gt; sysctl -a  
+<span class="ln">6</span>
+<span class="ln">7</span>//grep 變數
+<span class="ln">8</span>shell&gt; sysctl -a | grep tcp_timeout
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>//改變數
+<span class="ln">2</span>shell&gt;sysctl -w variable = value  
+<span class="ln">3</span>shell&gt;sysctl -w net.ipv4.ip_forward=1        
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>//修改設定檔 sysctl.conf
+<span class="ln">2</span>shell&gt; vi /etc/sysct.conf
+<span class="ln">3</span>
+<span class="ln">4</span>//載入設定檔，不需重開機 (載入 /etc/sysct.conf)
+<span class="ln">5</span>shell&gt; sysctl -p
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>//重新載入以下所有檔案
+<span class="ln">2</span>shell&gt; sysctl --system
+<span class="ln">3</span>
+<span class="ln">4</span>/run/sysctl.d/*.conf
+<span class="ln">5</span>/etc/sysctl.d/*.conf
+<span class="ln">6</span>/usr/local/lib/sysctl.d/*.conf
+<span class="ln">7</span>/usr/lib/sysctl.d/*.conf
+<span class="ln">8</span>/lib/sysctl.d/*.conf
+<span class="ln">9</span>/etc/sysctl.conf
+</code></pre></div>
 
   </article>
 <aside class="sidebar">
@@ -180,9 +193,6 @@ $$</p>
         <a href="https://blog.cruisechang.com/post/linux-cmd-free/" class="nav-link" title="Linux free">Linux free</a>
       </li>
       <li>
-        <a href="https://blog.cruisechang.com/post/linux-cmd-sysctl/" class="nav-link" title="Linux sysctl">Linux sysctl</a>
-      </li>
-      <li>
         <a href="https://blog.cruisechang.com/post/leader-admit-mistakes/" class="nav-link" title="領導者要懂得認錯">領導者要懂得認錯</a>
       </li>
       <li>
@@ -193,6 +203,9 @@ $$</p>
       </li>
       <li>
         <a href="https://blog.cruisechang.com/post/rich-content/" class="nav-link" title="Rich Content">Rich Content</a>
+      </li>
+      <li>
+        <a href="https://blog.cruisechang.com/post/math-typesetting/" class="nav-link" title="Math Typesetting">Math Typesetting</a>
       </li>
       <li>
         <a href="https://blog.cruisechang.com/post/emoji-support/" class="nav-link" title="Emoji Support">Emoji Support</a>
