@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh" data-figures="" class="page">
   <head>
-<title>Markdown Syntax Guide | Cruise Blog</title>
+<title>Go middleware | Cruise Blog</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,23 +17,21 @@
   
 <meta property="og:locale" content="zh" />
 
-<meta property="og:locale:alternate" content="pt" />
-
 <meta property="og:type" content="article">
-<meta name="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+<meta name="description" content="Go middleware example">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@cruisechang">
-<meta name="twitter:title" content="Markdown Syntax Guide" />
-<meta property="og:url" content="https://blog.cruisechang.com/post/markdown-syntax/" />
-<meta property="og:title" content="Markdown Syntax Guide" />
-<meta property="og:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements." />
-<meta property="og:image" content="https://blog.cruisechang.com/images/building.png" />
+<meta name="twitter:title" content="Go middleware" />
+<meta property="og:url" content="https://blog.cruisechang.com/post/go-middleware/" />
+<meta property="og:title" content="Go middleware" />
+<meta property="og:description" content="Go middleware example" />
+<meta property="og:image" content="https://blog.cruisechang.com/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://blog.cruisechang.com/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://blog.cruisechang.com/icons/favicon-32x32.png">
 <link rel="manifest" href="https://blog.cruisechang.com/icons/site.webmanifest">
 
-<link rel="canonical" href="https://blog.cruisechang.com/post/markdown-syntax/">
+<link rel="canonical" href="https://blog.cruisechang.com/post/go-middleware/">
 
     
 
@@ -103,29 +101,26 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Markdown Syntax Guide</h1>
+    <h1 class="post_title">Go middleware</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <use xlink:href="#calendar"></use>
 </svg></span>
     <span class="post_date">
-      Mar 11, 2019</span>
-    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='https://blog.cruisechang.com/tags/markdown' title="markdown" class="post_tag button button_translucent">markdown
-        </a><a href='https://blog.cruisechang.com/tags/css' title="css" class="post_tag button button_translucent">css
-        </a><a href='https://blog.cruisechang.com/tags/html' title="html" class="post_tag button button_translucent">html
-        </a><a href='https://blog.cruisechang.com/tags/themes' title="themes" class="post_tag button button_translucent">themes
-        </a><a href='https://blog.cruisechang.com/tags/featured' title="featured" class="post_tag button button_translucent">featured
+      Sep 23, 2021</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://blog.cruisechang.com/tags/go' title="go" class="post_tag button button_translucent">go
+        </a><a href='https://blog.cruisechang.com/tags/software-engineering' title="software-engineering" class="post_tag button button_translucent">software-engineering
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Markdown%20Syntax%20Guide&url=https%3a%2f%2fblog.cruisechang.com%2fpost%2fmarkdown-syntax%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Go%20middleware&url=https%3a%2f%2fblog.cruisechang.com%2fpost%2fgo-middleware%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <use xlink:href="#twitter"></use>
 </svg>
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fblog.cruisechang.com%2fpost%2fmarkdown-syntax%2f&t=Markdown%20Syntax%20Guide" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fblog.cruisechang.com%2fpost%2fgo-middleware%2f&t=Go%20middleware" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <use xlink:href="#facebook"></use>
 </svg>
@@ -135,7 +130,7 @@
   <use xlink:href="#linkedin"></use>
 </svg>
     </a>
-    <a href="https://blog.cruisechang.com/post/markdown-syntax/" title="Copy Link" class="link link_yank">
+    <a href="https://blog.cruisechang.com/post/go-middleware/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <use xlink:href="#copy"></use>
 </svg>
@@ -145,155 +140,73 @@
   </div>
 
     
-    <p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
-<h2 id="headings">Headings</h2>
-<p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
-<h1 id="h1">H1</h1>
-<h2 id="h2">H2</h2>
-<h3 id="h3">H3</h3>
-<h4 id="h4">H4</h4>
-<h5 id="h5">H5</h5>
-<h6 id="h6">H6</h6>
-<h2 id="paragraph">Paragraph</h2>
-<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
-<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
-<h2 id="blockquotes">Blockquotes</h2>
-<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
-<h4 id="blockquote-without-attribution">Blockquote without attribution</h4>
-<blockquote>
-<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
-</blockquote>
-<h4 id="blockquote-with-attribution">Blockquote with attribution</h4>
-<blockquote>
-<p>Don't communicate by sharing memory, share memory by communicating.<br>
-— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
-</blockquote>
-<h2 id="tables">Tables</h2>
-<p>Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bob</td>
-<td>27</td>
-</tr>
-<tr>
-<td>Alice</td>
-<td>23</td>
-</tr>
-</tbody>
-</table>
-<h4 id="inline-markdown-within-tables">Inline Markdown within tables</h4>
-<table>
-<thead>
-<tr>
-<th>Italics</th>
-<th>Bold</th>
-<th>Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>italics</em></td>
-<td><strong>bold</strong></td>
-<td><code>code</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="code-blocks">Code Blocks</h2>
-<h4 id="code-block-with-backticks">Code block with backticks</h4>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln"> 1</span><span class="cp">&lt;!doctype html&gt;</span>
-<span class="ln"> 2</span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-<span class="ln"> 3</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="ln"> 4</span>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-<span class="ln"> 5</span>  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-<span class="ln"> 6</span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="ln"> 7</span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="ln"> 8</span>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="ln"> 9</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="ln">10</span><span class="c">&lt;!-- this line is extraneous 2Error from server (Forbidden): deployments.apps is forbidden: User &#34;chiptest&#34; cannot create resource &#34;deployments&#34; in API group &#34;apps&#34; in the namespace &#34;default&#34; --&gt;</span>
-<span class="ln">11</span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div><h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h4>
-<pre><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo's internal highlight shortcode</h4>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln"> 1</span><span class="cp">&lt;!doctype html&gt;</span>
-<span class="ln"> 2</span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-<span class="ln"> 3</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="ln"> 4</span>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-<span class="ln"> 5</span>  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-<span class="ln"> 6</span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="ln"> 7</span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="ln"> 8</span>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="ln"> 9</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="ln">10</span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
-<h2 id="list-types">List Types</h2>
-<h4 id="ordered-list">Ordered List</h4>
-<ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-</ol>
-<h4 id="unordered-list">Unordered List</h4>
-<ul>
-<li>List item</li>
-<li>Another item</li>
-<li>And another item</li>
-</ul>
-<h4 id="nested-list">Nested list</h4>
-<ul>
-<li>Fruit
-<ul>
-<li>Apple</li>
-<li>Orange</li>
-<li>Banana</li>
-</ul>
-</li>
-<li>Dairy
-<ul>
-<li>Milk</li>
-<li>Cheese</li>
-</ul>
-</li>
-</ul>
-<h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
-<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
-<p>H<sub>2</sub>O</p>
-<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
-<p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>
-<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p>The above quote is excerpted from Rob Pike's <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
-
-<h3>翻译:</h3>
-<ul>
-  
-    <li>
-      <a href="https://blog.cruisechang.com/pt/post/markdown-syntax/">&#34;&#34; |</a>
-    </li>
-  
-</ul> 
+    <h2 id="go-middleware">go middleware</h2>
+<p>間單的 go middleware 架構範例。</p>
+<p><a href="https://play.golang.org/p/L8UDLh18Mgb">go playground</a></p>
+<h3 id="middleware-controller">middleware controller</h3>
+<p>controller.go</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">middleware</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kd">type</span> <span class="nx">middleware</span> <span class="kd">func</span><span class="p">(</span><span class="nx">con</span> <span class="o">*</span><span class="nx">controller</span><span class="p">)</span>
+<span class="ln"> 4</span>
+<span class="ln"> 5</span><span class="kd">type</span> <span class="nx">controller</span> <span class="kd">struct</span> <span class="p">{</span>
+<span class="ln"> 6</span>	<span class="nx">wares</span> <span class="p">[]</span><span class="nx">middleware</span>
+<span class="ln"> 7</span>	<span class="nx">wareIndex</span> <span class="kt">int</span>
+<span class="ln"> 8</span>	<span class="c1">//container for middleware
+</span><span class="ln"> 9</span><span class="c1"></span><span class="p">}</span>
+<span class="ln">10</span>
+<span class="ln">11</span><span class="kd">func</span> <span class="nf">NewController</span><span class="p">()</span><span class="o">*</span><span class="nx">controller</span><span class="p">{</span>
+<span class="ln">12</span>	<span class="k">return</span> <span class="o">&amp;</span> <span class="nx">controller</span><span class="p">{</span>
+<span class="ln">13</span>		<span class="nx">wares</span><span class="p">:</span> <span class="p">[]</span><span class="nx">middleware</span><span class="p">{},</span>
+<span class="ln">14</span>		<span class="nx">wareIndex</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="ln">15</span>	<span class="p">}</span>
+<span class="ln">16</span><span class="p">}</span>
+<span class="ln">17</span><span class="kd">func</span> <span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">controller</span><span class="p">)</span> <span class="nf">Use</span><span class="p">(</span><span class="nx">mw</span> <span class="nx">middleware</span><span class="p">)</span> <span class="p">{</span>
+<span class="ln">18</span>	<span class="nx">c</span><span class="p">.</span><span class="nx">wares</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">wares</span><span class="p">,</span><span class="nx">mw</span><span class="p">)</span>
+<span class="ln">19</span><span class="p">}</span>
+<span class="ln">20</span><span class="kd">func</span><span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">controller</span><span class="p">)</span><span class="nf">Run</span><span class="p">(){</span>
+<span class="ln">21</span>	<span class="nx">c</span><span class="p">.</span><span class="nx">wareIndex</span><span class="p">=</span><span class="mi">0</span>
+<span class="ln">22</span>	<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">wares</span><span class="p">)&gt;</span><span class="mi">0</span><span class="p">{</span>
+<span class="ln">23</span>		<span class="nx">c</span><span class="p">.</span><span class="nx">wares</span><span class="p">[</span><span class="nx">c</span><span class="p">.</span><span class="nx">wareIndex</span><span class="p">](</span><span class="nx">c</span><span class="p">)</span>
+<span class="ln">24</span>	<span class="p">}</span>
+<span class="ln">25</span><span class="p">}</span>
+<span class="ln">26</span><span class="kd">func</span> <span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">controller</span><span class="p">)</span> <span class="nf">Next</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">27</span>	<span class="k">if</span> <span class="nx">c</span><span class="p">.</span><span class="nx">wareIndex</span><span class="p">&lt;(</span><span class="nb">len</span><span class="p">(</span><span class="nx">c</span><span class="p">.</span><span class="nx">wares</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+<span class="ln">28</span>		<span class="nx">c</span><span class="p">.</span><span class="nx">wareIndex</span><span class="o">++</span>
+<span class="ln">29</span>		<span class="nx">c</span><span class="p">.</span><span class="nx">wares</span><span class="p">[</span><span class="nx">c</span><span class="p">.</span><span class="nx">wareIndex</span><span class="p">](</span><span class="nx">c</span><span class="p">)</span>
+<span class="ln">30</span>	<span class="p">}</span>
+<span class="ln">31</span><span class="p">}</span>
+<span class="ln">32</span>
+</code></pre></div><h3 id="middleware-example-code">middleware example code</h3>
+<p>example.go</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">middleware</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 4</span>
+<span class="ln"> 5</span><span class="kd">func</span> <span class="nf">doExample</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 6</span>	<span class="nx">con</span><span class="o">:=</span><span class="nf">NewController</span><span class="p">()</span>
+<span class="ln"> 7</span>	<span class="nx">con</span><span class="p">.</span><span class="nf">Use</span><span class="p">(</span><span class="nx">sampleFunc1</span><span class="p">)</span>
+<span class="ln"> 8</span>	<span class="nx">con</span><span class="p">.</span><span class="nf">Use</span><span class="p">(</span><span class="nx">sampleFunc2</span><span class="p">)</span>
+<span class="ln"> 9</span>	<span class="nx">con</span><span class="p">.</span><span class="nf">Use</span><span class="p">(</span><span class="nx">sampleFunc3</span><span class="p">)</span>
+<span class="ln">10</span>	<span class="nx">con</span><span class="p">.</span><span class="nf">Run</span><span class="p">()</span>
+<span class="ln">11</span><span class="p">}</span>
+<span class="ln">12</span>
+<span class="ln">13</span><span class="kd">func</span> <span class="nf">sampleFunc1</span><span class="p">(</span><span class="nx">con</span> <span class="o">*</span><span class="nx">controller</span><span class="p">){</span>
+<span class="ln">14</span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;before1&#34;</span><span class="p">)</span>
+<span class="ln">15</span>	<span class="nx">con</span><span class="p">.</span><span class="nf">Next</span><span class="p">()</span>
+<span class="ln">16</span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;after1&#34;</span><span class="p">)</span>
+<span class="ln">17</span><span class="p">}</span>
+<span class="ln">18</span><span class="kd">func</span> <span class="nf">sampleFunc2</span><span class="p">(</span><span class="nx">con</span> <span class="o">*</span><span class="nx">controller</span><span class="p">){</span>
+<span class="ln">19</span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;before2&#34;</span><span class="p">)</span>
+<span class="ln">20</span>	<span class="nx">con</span><span class="p">.</span><span class="nf">Next</span><span class="p">()</span>
+<span class="ln">21</span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;after2&#34;</span><span class="p">)</span>
+<span class="ln">22</span><span class="p">}</span>
+<span class="ln">23</span><span class="kd">func</span> <span class="nf">sampleFunc3</span><span class="p">(</span><span class="nx">con</span> <span class="o">*</span><span class="nx">controller</span><span class="p">){</span>
+<span class="ln">24</span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;before3&#34;</span><span class="p">)</span>
+<span class="ln">25</span>	<span class="nx">con</span><span class="p">.</span><span class="nf">Next</span><span class="p">()</span>
+<span class="ln">26</span>	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;after3&#34;</span><span class="p">)</span>
+<span class="ln">27</span><span class="p">}</span>
+</code></pre></div>
 
   </article>
 <aside class="sidebar">
@@ -303,14 +216,14 @@
         Technologist, perpetual student, teacher, continual incremental improvement.
       </div>
       <a href='https://blog.cruisechang.com/about/' class="button mt-1" role="button" title='阅读更多'>阅读更多</a>
+    <h2 class="mt-4">精选文章</h2>
+    <ul>
+      <li>
+        <a href="https://blog.cruisechang.com/post/markdown-syntax/" class="nav-link" title="Markdown Syntax Guide">Markdown Syntax Guide</a>
+      </li>
+    </ul>
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
-      <li>
-        <a href="https://blog.cruisechang.com/post/go-func-middleware/" class="nav-link" title="Go func middleware">Go func middleware</a>
-      </li>
-      <li>
-        <a href="https://blog.cruisechang.com/post/go-interface-middleware/" class="nav-link" title="Go interface middleware">Go interface middleware</a>
-      </li>
       <li>
         <a href="https://blog.cruisechang.com/post/linux-cmd-free/" class="nav-link" title="Linux free">Linux free</a>
       </li>
@@ -324,10 +237,16 @@
         <a href="https://blog.cruisechang.com/post/notices/" class="nav-link" title="Using Notices">Using Notices</a>
       </li>
       <li>
+        <a href="https://blog.cruisechang.com/post/markdown-syntax/" class="nav-link" title="Markdown Syntax Guide">Markdown Syntax Guide</a>
+      </li>
+      <li>
         <a href="https://blog.cruisechang.com/post/rich-content/" class="nav-link" title="Rich Content">Rich Content</a>
       </li>
       <li>
         <a href="https://blog.cruisechang.com/post/math-typesetting/" class="nav-link" title="Math Typesetting">Math Typesetting</a>
+      </li>
+      <li>
+        <a href="https://blog.cruisechang.com/post/emoji-support/" class="nav-link" title="Emoji Support">Emoji Support</a>
       </li>
     </ul>
     <div>
@@ -360,11 +279,6 @@
     <div>
       <h2 class="mt-4 taxonomy" id="tags-section">标签</h2>
       <nav class="tags_nav">
-        <a href='https://blog.cruisechang.com/tags/go/' class="post_tag button button_translucent" title="go">
-          GO
-          <span class="button_tally">2</span>
-        </a>
-        
         <a href='https://blog.cruisechang.com/tags/linux/' class="post_tag button button_translucent" title="linux">
           LINUX
           <span class="button_tally">2</span>
@@ -372,11 +286,6 @@
         
         <a href='https://blog.cruisechang.com/tags/linux-command/' class="post_tag button button_translucent" title="linux-command">
           LINUX-COMMAND
-          <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://blog.cruisechang.com/tags/software-engineering/' class="post_tag button button_translucent" title="software-engineering">
-          SOFTWARE-ENGINEERING
           <span class="button_tally">2</span>
         </a>
         
@@ -392,6 +301,11 @@
         
         <a href='https://blog.cruisechang.com/tags/featured/' class="post_tag button button_translucent" title="featured">
           FEATURED
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://blog.cruisechang.com/tags/go/' class="post_tag button button_translucent" title="go">
+          GO
           <span class="button_tally">1</span>
         </a>
         
@@ -417,6 +331,11 @@
         
         <a href='https://blog.cruisechang.com/tags/shortcodes/' class="post_tag button button_translucent" title="shortcodes">
           SHORTCODES
+          <span class="button_tally">1</span>
+        </a>
+        
+        <a href='https://blog.cruisechang.com/tags/software-engineering/' class="post_tag button button_translucent" title="software-engineering">
+          SOFTWARE-ENGINEERING
           <span class="button_tally">1</span>
         </a>
         
@@ -448,7 +367,7 @@
             </a>
             
             
-            <a href='https://blog.cruisechang.com/tags/go/' class=" post_tag button button_translucent" data-position=2 title="go">GO<span class="button_tally">2</span>
+            <a href='https://blog.cruisechang.com/tags/go/' class=" post_tag button button_translucent" data-position=1 title="go">GO<span class="button_tally">1</span>
             </a>
             
             
@@ -480,7 +399,7 @@
             </a>
             
             
-            <a href='https://blog.cruisechang.com/tags/software-engineering/' class=" post_tag button button_translucent" data-position=2 title="software-engineering">SOFTWARE-ENGINEERING<span class="button_tally">2</span>
+            <a href='https://blog.cruisechang.com/tags/software-engineering/' class=" post_tag button button_translucent" data-position=1 title="software-engineering">SOFTWARE-ENGINEERING<span class="button_tally">1</span>
             </a>
             
             
