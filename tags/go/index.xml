@@ -7,7 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 23 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cruisechang.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cruisechang.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go Test Syntax</title>
+      <link>https://blog.cruisechang.com/post/go-test-syntax/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.cruisechang.com/post/go-test-syntax/</guid>
+      <description>
+        
+          &lt;h2 id=&#34;go-test-syntax&#34;&gt;go test syntax&lt;/h2&gt;
+&lt;p&gt;go test 語法。&lt;/p&gt;
+&lt;h5 id=&#34;from-go-19-onwardshttpsgodevdocgo19vendor-dotdotdot-use&#34;&gt;&lt;a href=&#34;https://go.dev/doc/go1.9#vendor-dotdotdot&#34;&gt;From Go 1.9 onwards&lt;/a&gt;, use&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;go test ./...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;in-go-16-through-18-the--matched-also-the-vendor-directory-to-skip-vendored-packages-youd-use&#34;&gt;In Go 1.6 through 1.8, the ./... matched also the vendor directory. To skip vendored packages, you&#39;d use&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;go test $(go list ./... | grep -v /vendor/)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This should run all tests in current directory and all of its subdirectories:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;$ go test ./...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This should run all tests for given specific directories:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;$ go test ./tests/... ./unit-tests/... ./my-packages/...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This should run all tests with import path prefixed with foo/:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;$ go test foo/...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This should run all tests import path prefixed with foo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;$ go test foo...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This should run all tests in your $GOPATH:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;$ go test ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>Go func middleware</title>
       <link>https://blog.cruisechang.com/post/go-func-middleware/</link>
