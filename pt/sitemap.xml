@@ -2,40 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.cruisechang.com/pt/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.cruisechang.com/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.cruisechang.com/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://blog.cruisechang.com/pt/categories/"
-                />
-  </url><url>
-    <loc>https://blog.cruisechang.com/pt/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.cruisechang.com/tags/css/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://blog.cruisechang.com/pt/tags/css/"
-                />
-  </url><url>
-    <loc>https://blog.cruisechang.com/pt/tags/destacado/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.cruisechang.com/pt/post/markdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -51,32 +17,6 @@
   </url><url>
     <loc>https://blog.cruisechang.com/pt/series/guia-de-temas/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.cruisechang.com/pt/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.cruisechang.com/tags/html/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://blog.cruisechang.com/pt/tags/html/"
-                />
-  </url><url>
-    <loc>https://blog.cruisechang.com/pt/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.cruisechang.com/tags/markdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://blog.cruisechang.com/pt/tags/markdown/"
-                />
   </url><url>
     <loc>https://blog.cruisechang.com/pt/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
@@ -127,11 +67,37 @@
                 href="https://blog.cruisechang.com/pt/series/"
                 />
   </url><url>
-    <loc>https://blog.cruisechang.com/pt/categories/sintaxe/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://blog.cruisechang.com/pt/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.cruisechang.com/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://blog.cruisechang.com/pt/about/"
+                />
+  </url><url>
+    <loc>https://blog.cruisechang.com/pt/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.cruisechang.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.cruisechang.com/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://blog.cruisechang.com/pt/categories/"
+                />
   </url><url>
     <loc>https://blog.cruisechang.com/pt/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -146,25 +112,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://blog.cruisechang.com/pt/tags/"
-                />
-  </url><url>
-    <loc>https://blog.cruisechang.com/pt/tags/temas/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.cruisechang.com/pt/categories/temas/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.cruisechang.com/pt/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.cruisechang.com/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://blog.cruisechang.com/pt/about/"
                 />
   </url>
 </urlset>

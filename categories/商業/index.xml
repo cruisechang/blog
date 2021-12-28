@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>管理 on Cruise Blog</title>
-    <link>https://blog.cruisechang.com/tags/%E7%AE%A1%E7%90%86/</link>
-    <description>Recent content in 管理 on Cruise Blog</description>
+    <title>商業 on Cruise Blog</title>
+    <link>https://blog.cruisechang.com/categories/%E5%95%86%E6%A5%AD/</link>
+    <description>Recent content in 商業 on Cruise Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cruisechang.com/tags/%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cruisechang.com/categories/%E5%95%86%E6%A5%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>賣二手車更賣數據</title>
       <link>https://blog.cruisechang.com/post/business-used-card-carro/</link>
