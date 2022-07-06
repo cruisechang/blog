@@ -7,7 +7,62 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cruisechang.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cruisechang.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go Concept</title>
+      <link>https://blog.cruisechang.com/post/go-concept/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.cruisechang.com/post/go-concept/</guid>
+      <description>
+        
+          &lt;h2 id=&#34;go-concept&#34;&gt;go concept&lt;/h2&gt;
+&lt;p&gt;這篇紀錄 go 的各種觀念。&lt;/p&gt;
+&lt;h3 id=&#34;內嵌&#34;&gt;內嵌&lt;/h3&gt;
+&lt;p&gt;「我們應該優先使用物件組合，而不是繼承。」&lt;/p&gt;
+&lt;p&gt;go語言充分實踐了這個原則， 連繼承都沒有，&lt;/p&gt;
+&lt;p&gt;但加入了內嵌，讓你組合物件。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;type Employee struct{
+&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;    Name string
+&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;    ID string
+&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;}
+&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;func(e Employee)Description()string{
+&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;    return fmt.Sprintf(&amp;#34;%s %s&amp;#34;,e.Name,e.ID)
+&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;}
+&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;type Manager struct{
+&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;    Employee    //type field, 內嵌
+&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;    Reports []Employee
+&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;}
+&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;m:=Manager{
+&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;    Employee:Employee{
+&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;        &amp;#34;Jack&amp;#34;,
+&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;        &amp;#34;12345&amp;#34;,
+&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;    }
+&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;    //給內嵌欄位指派物件
+&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;    Reports:[]Employee{},
+&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;內嵌與物件變數不同，內嵌的外部物件擁有了內部物件的方法。&lt;/p&gt;
+&lt;p&gt;如果內嵌欄位有一個方法會呼叫內嵌欄位的另一個方法，
+而外部物件也有同名方法，此時會優先呼叫同一層(內嵌物件)的方法。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;內嵌好處1： 可實作內層物件介面&lt;/p&gt;
+&lt;p&gt;外層的物件透過內嵌，直接擁有了內層物件的方法，
+於是外層物件可以實踐內層物件的介面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;內嵌好處2：內外層物件保持各自獨立性&lt;/p&gt;
+&lt;p&gt;與繼承不同，使用繼承，一旦改變基礎物件，繼承物件也會被更改，
+使用內嵌則不一樣，外部物件保留獨立性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;內嵌與介面相輔相成&#34;&gt;內嵌與介面相輔相成&lt;/h4&gt;
+&lt;p&gt;go 非常鼓勵工程師使用介面來實作程式，這點我們可以從內建標準庫看出來，go 在標準庫大量使用介面。
+而且為了發揮介面的功能還提供其它設計，來幫助實作介面，例如內嵌就是。&lt;/p&gt;
+        
+      </description>
+    </item>
+    
     <item>
       <title>Go Test Syntax</title>
       <link>https://blog.cruisechang.com/post/go-test-syntax/</link>

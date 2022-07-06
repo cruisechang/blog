@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.cruisechang.com/</loc>
-    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -21,7 +21,7 @@
                 />
   </url><url>
     <loc>https://blog.cruisechang.com/categories/</loc>
-    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,13 +39,13 @@
                 />
   </url><url>
     <loc>https://blog.cruisechang.com/tags/go/</loc>
-    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.cruisechang.com/post/go-test-syntax/</loc>
-    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+    <loc>https://blog.cruisechang.com/post/go-concept/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cruisechang.com/post/</loc>
-    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -58,10 +58,10 @@
                 />
   </url><url>
     <loc>https://blog.cruisechang.com/tags/software-engineering/</loc>
-    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cruisechang.com/tags/</loc>
-    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -78,13 +78,16 @@
                 href="https://blog.cruisechang.com/tags/"
                 />
   </url><url>
+    <loc>https://blog.cruisechang.com/categories/%E7%A8%8B%E5%BC%8F/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.cruisechang.com/post/go-test-syntax/</loc>
+    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.cruisechang.com/categories/%E5%95%86%E6%A5%AD/</loc>
     <lastmod>2021-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cruisechang.com/tags/%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.cruisechang.com/categories/%E7%A8%8B%E5%BC%8F/</loc>
     <lastmod>2021-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cruisechang.com/tags/%E7%AE%A1%E7%90%86/</loc>
