@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/Users/cruise/cruisechang/github.com/blog-code/blog",
+	"sourceRoot": "/Users/cruise/Works/src/github.com/cruisechang/blog-code/blog",
 	"sources": [
 		"themes/hugo-clarity/assets/sass/main.sass",
 		"themes/hugo-clarity/assets/sass/_variables.sass",
